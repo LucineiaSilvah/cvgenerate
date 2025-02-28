@@ -23,3 +23,12 @@ form{
 section{
   margin: 1rem 0;
 }
+
+@media print{
+  form{
+    display: none;
+  }
+  #imprimir{
+    display: none;
+  } 
+}

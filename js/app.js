@@ -1,7 +1,7 @@
 let myForm = document.getElementById("myForm")
 const btnEnviar = document.getElementById("btnEnviar")
 let container = document.getElementById("container")
-
+let imprimir = document.getElementById("imprimir")
 
 btnEnviar.addEventListener('click', (e)=>{
   e.preventDefault()
@@ -10,33 +10,32 @@ var formData = new FormData(myForm)
 const lista = []
  formData.forEach((name)=>{
  lista.push(name)
+ 
+ 
 })
 
 
-
- lista.map((item,index)=>{
-   console.log(item,index);
+console.log(lista)
+ 
+   
    container.innerHTML+=`
     <header>
-        <h1>${item}</h1>
-        <h3>${item}</h3>
+        <h1>${lista[0]}</h1>
+        <h3>${lista[1]}</h3>
         <hr />
       </header>
       <main>
         <section class="contato">
-          <p>endereco</p>
-          <p>email</p>
-          <p>telefone</p>
-          <p>linkedin</p>
+          <p>${lista[2]}</p>
+          <p>${lista[3]}</p>
+          <p>${lista[4]}</p>
+          <p>${lista[5]}</p>
         </section>
         <section class="objetivo">
          
             <h2>Objetivos</h2>
             <p>
-              resu mo Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              nostrum distinctio porro commodi animi mollitia eaque cum atque ad
-              ratione obcaecati nesciunt autem accusantium dolorum vitae consectetur
-              non, tempore voluptates?
+              ${lista[7]}
             </p>
         
         </section>
@@ -85,6 +84,11 @@ const lista = []
       </main>
    
    `
-  });
+ 
   
  })
+
+
+imprimir.addEventListener('click',()=>{
+  window.print(container)
+})
