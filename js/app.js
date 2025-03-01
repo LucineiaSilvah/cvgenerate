@@ -15,10 +15,10 @@ const lista = []
 })
 
 
-console.log(lista)
+
  
    
-   container.innerHTML+=`
+   container.innerHTML=`
     <header>
         <h1>${lista[0]}</h1>
         <h3>${lista[1]}</h3>
@@ -40,24 +40,36 @@ console.log(lista)
         
         </section>
 
-        <section class="formacao">
+        <section class="formação">
           <h2>Formaçao</h2>
-          <p>descreva formacao</p>
+          <p>
+           ${lista[8]} - ${lista[9]}
+          </p>
+          <p>
+           ${lista[10]} - ${lista[11]}
+          </p>
+          <p>
+           ${lista[12]} - ${lista[13]}
+          </p>
+         
+          
+         
         </section>
 
         <section class="experiencias">
           <h2>experiências</h2>
           <div class="experiencia">
             <div>
-              <p>cargo</p>
-              <p>empresa</p>
-              <p>periodo</p>
+              <p> ${lista[14]}</p>
+               <ul><li>${lista[15]}</li></ul>
+              <p> ${lista[16]}</p>
+              <ul><li>${lista[17]}</li></ul>
             </div>
             <div>
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>${lista[18]}</li>
+                <li>${lista[19]}</li>
+                <li>${lista[20]}</li>
               </ul>
             </div>
           </div>
@@ -66,19 +78,20 @@ console.log(lista)
         <section class="cursos">
           <h2>Cursos Complementares</h2>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>${lista[21]}</li>
+                <li>${lista[22]}</li>
+                <li>${lista[23]}</li>
+                <li>${lista[24]}</li>
           </ul>
         </section>
 
         <section class="habilidades">
           <h2>Habilidades & Idioma</h2>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>${lista[25]}</li>
+                <li>${lista[26]}</li>
+                <li>${lista[27]}</li>
+                <li>${lista[28]}</li>
           </ul>
         </section>
       </main>

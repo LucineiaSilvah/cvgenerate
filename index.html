@@ -8,71 +8,133 @@
     <link rel="stylesheet" href="/style/global.css" />
   </head>
   <body>
-    <div >
+    <fieldset >
+      <legend>gerador de cv</legend>
       <form id="myForm">
-        <label >Nome
-          <input type="text" name="nome">
-        </label>
-        <label>Cargo
-          <input type="text" name="cargo">
-        </label>
-        <label>Endereço
-          <input type="text" name="endereco">
-        </label>
-        <label>email
-          <input type="text" name="email">
-        </label>
-        <label>telefone
-          <input type="text" name="telefone">
-        </label>
-        <label>linkedin
-          <input type="text" name="linkedin">
-        </label>
-
+        <div class="header">
+          <label >Nome
+            <input type="text" name="nome"  placeholder="digite seu nome">
+          </label>
+          <label>Cargo
+            <input type="text" name="cargo" placeholder="digite o cargo desejado">
+          </label>
+          <label>Endereço
+            <input type="text" name="endereco" placeholder="ex:bairro, estado">
+          </label>
+          <label>email
+            <input type="text" name="email" placeholder="digite seu e-mail">
+          </label>
+          <label>telefone
+            <input type="text" name="telefone" placeholder="digite seu telefone">
+          </label>
+          <label>linkedin
+            <input type="text" name="linkedin" placeholder="digite o link de seu linkedin">
+          </label>
+  
+        </div>
+       <div class="objetivos">
         <label>Objetivos
-          <input type="text" name="objetivos">
+          <input type="text" name="objetivos" placeholder="digite seu objetivo ">
         </label>
         <label>resumo
-          <input type="text" name="resumo">
+          <input type="text" name="resumo" placeholder="digite seu resumo profissional ">
         </label>
-        <label>formacao
-          <input type="text" name="formacao">
-        </label>
-        <label>descreva formacao
-          <input type="text" name="descricaoformacao">
-        </label>
-        <label>experiencia
-          <input type="text" name="experiencia">
-        </label>
-        <label>excargo
-          <input type="text" name="excargo">
-        </label>
-        <label>empresa
-          <input type="text" name="empresa">
-        </label>
-        <label>periodo
-          <input type="text" name="periodo">
-        </label>
+       </div>
+       
+       <div class="formacao">
 
-        <label>descricao
-          <input type="text" name="exdescricao">
+        <label>formacao 
+          <label >nome do curso
+            <input type="text" name="formacao" placeholder="nome do curso superior">
+
+          </label>
+          
+          <label>periodo | Instituição
+            <input type="text" name="descricaoformacao" placeholder="Ex: 3°periodo | UFPR"> 
+          </label>
+
+          <label >nome do curso
+            <input type="text" name="formacao" placeholder="nome do curso superior">
+
+          </label>
+          
+          <label>periodo | Instituição
+            <input type="text" name="descricaoformacao" placeholder="Ex: 3°periodo | UFPR"> 
+          </label>
+
+          <label >nome do curso
+            <input type="text" name="formacao" placeholder="nome do curso superior">
+
+          </label>
+          
+          <label>periodo | Instituição
+            <input type="text" name="descricaoformacao" placeholder="Ex: 3°periodo | UFPR"> 
+          </label>
+          
         </label>
+       
+       </div>
+       
+       <div class="experiencias">
+        <label>experiencias 
+          <label >cargo
+            <input type="text" name="experiencia" placeholder="ex: assitente administrativo">
+
+          </label>
+          <label>descricao
+            <input type="text" name="exdescricao1" placeholder="resumo das atividades">
+          
+          </label>
+          <label >cargo
+            <input type="text" name="experiencia" placeholder="ex:outra experiencia">
+
+          </label>
+          <label>descricao
+            <input type="text" name="exdescricao1" placeholder="resumo das atividades">
+          
+          </label>
+          
+          <label >cargo
+            <input type="text" name="experiencia" placeholder="ex:outra experiencia">
+
+          </label>
+          <label>descricao
+            <input type="text" name="exdescricao1" placeholder="resumo das atividades">
+          
+          </label>
+          
+         
+        </label>
+       
+       </div>
+       
+       <div class="cursos">
         <label>cursos
-          <input type="text" name="curso">
+          <input type="text" name="curso1" placeholder="ex: nome do curso(40horas)">
+          <input type="text" name="curso2" placeholder="ex: nome do curso(40horas)">
+          <input type="text" name="curso3" placeholder="ex: nome do curso(40horas)">
+          <input type="text" name="curso4" placeholder="ex: nome do curso(40horas)">
+       
         </label>
-        <label>descricao
-          <input type="text" name="cursodescricao">
-        </label>
+       </div>
+
+       <div class="habilides">
+
         <label>habilidades
-          <input type="text" name="habilidades">
+          <input type="text" name="habilidade1" placeholder="ex:otimização de processos">
+          <input type="text" name="habilidade2" placeholder="gestão de tempo e organizção">
+          <input type="text" name="habilidade3" placeholder="sua habilidade">
+          <input type="text" name="habilidade4" placeholder="sua habilidade">
         </label>
-        <label>descricao
-          <input type="text" name="habdescricao">
-        </label>
-        <button type="submit" id="btnEnviar">enviar</button>
+       </div>
+      
+      
+       
+        <button type="submit" id="btnEnviar">ver</button>
+        <button id="imprimir" >imprimir</button>
       </form>
-    </div>
-    <button id="imprimir" >imprimir</button>
+    </fieldset>
+    
     <div id="container">
      
     </div>
