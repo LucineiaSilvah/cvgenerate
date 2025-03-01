@@ -4,6 +4,11 @@
   box-sizing: border-box;
 list-style: none;
 }
+body {
+  background:#fff;
+  
+  
+}
 h2{
   text-transform: capitalize;
 }
@@ -13,6 +18,7 @@ h2{
  margin: auto;
  padding: 10px;
  max-width: 794px;
+ 
 
 }
 div{
@@ -28,11 +34,18 @@ fieldset{
   margin: 2rem auto;
   padding: 3rem;
   border-radius: 2rem;
+  background: #c8bee498;
+  border: 1px solid #e426d8;
+  color: #e426d8;
+}
+input::placeholder{
+  color: #99199196;
 }
 legend{
   font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
+  text-shadow: 1px 2px black;
   
 }
 form{
@@ -45,10 +58,14 @@ label{
   flex-direction: column;
   text-transform: capitalize;
   font-weight: bold;
+  margin: .5rem 0;
+  
 }
+
 input{
-  padding: 0.25rem;
-  border: 1px solid cadetblue;
+  padding: 0.5rem;
+  border-radius: .25rem;
+  border: 1px solid #e426d8;
 }
 section{
   margin: 1rem 0;
@@ -59,7 +76,26 @@ p{
   text-transform: capitalize;
 
 }
-
+.cursos input, .habilidades input {
+  margin: .5rem 0;
+}
+button{
+  padding: .5rem;
+  background: #e426d8;
+  font-weight: bold;
+  border: none;
+  color: #fff;
+  border-radius: .25rem;
+  
+}
+@media screen and (max-width:798px){
+  form{
+    grid-template-columns:  2fr;
+  }
+  fieldset{
+    width: 90%;
+  }
+}
 @media print{
  fieldset,legend{
   display: none;

@@ -64,34 +64,32 @@ const lista = []
                <ul><li>${lista[15]}</li></ul>
               <p> ${lista[16]}</p>
               <ul><li>${lista[17]}</li></ul>
+              <p> ${lista[18]}</p>
+              <ul><li>${lista[19]}</li></ul>
             </div>
-            <div>
-              <ul>
-                <li>${lista[18]}</li>
-                <li>${lista[19]}</li>
-                <li>${lista[20]}</li>
-              </ul>
-            </div>
+            
+              
+            
           </div>
         </section>
 
         <section class="cursos">
           <h2>Cursos Complementares</h2>
           <ul>
-            <li>${lista[21]}</li>
+            <li>${lista[20]}</li>
+                <li>${lista[21]}</li>
                 <li>${lista[22]}</li>
                 <li>${lista[23]}</li>
-                <li>${lista[24]}</li>
           </ul>
         </section>
 
         <section class="habilidades">
           <h2>Habilidades & Idioma</h2>
           <ul>
-            <li>${lista[25]}</li>
+            <li>${lista[24]}</li>
+                <li>${lista[25]}</li>
                 <li>${lista[26]}</li>
                 <li>${lista[27]}</li>
-                <li>${lista[28]}</li>
           </ul>
         </section>
       </main>
